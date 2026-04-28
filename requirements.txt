@@ -1,0 +1,25 @@
+# ============================================================
+# packages.txt — Server package list
+# One package per line. Lines starting with # are ignored.
+# Used by cloud-init on first boot via:
+#   curl .../packages.txt | xargs apt-get install -y
+# ============================================================
+
+# Shell
+zsh
+build-essential
+
+# Utils
+wget
+unzip
+
+# Dev tools
+git
+neovim
+
+# Modern CLI replacements
+bat          # cat replacement (your .zshrc alias: cat → bat)
+eza          # ls replacement  (your .zshrc alias: ls → eza)
+fzf          # fuzzy finder    (your .zshrc: fzf --zsh)
+zoxide       # cd replacement  (your .zshrc: zoxide init)
+fastfetch    # system info     (your .zshrc alias: ff/nf/pf)
